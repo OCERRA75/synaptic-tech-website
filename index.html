@@ -408,134 +408,139 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">Hardware Certificado</span>
-        <h2 class="section-title">Equipos POS — Digital POS &amp; SAT</h2>
-        <p style="color:var(--color-text-muted);text-align:center;max-width:600px;margin:0 auto 40px;">Trabajamos con las marcas líderes en Colombia. Cada combo incluye el hardware que mejor se adapta a tu operación.</p>
+        <h2 class="section-title">Equipos POS por Marca</h2>
+        <p style="color:var(--color-text-muted);text-align:center;max-width:600px;margin:0 auto 40px;">Trabajamos con las marcas líderes en Colombia. Elige el combo que mejor se adapta a tu operación.</p>
       </div>
 
-      <!-- Bloque SAT -->
-      <h3 style="color:var(--color-accent);font-size:1rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px;">
-        <span style="display:inline-block;width:32px;height:2px;background:var(--color-accent);"></span> Marca SAT
-      </h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;margin-bottom:48px;">
-
-        <!-- Terminal S10 -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="images/sat-terminal-s10.webp" alt="Terminal SAT S10" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Terminal Doble Pantalla</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">All in One táctil · Doble display · Alto tráfico comercial</p>
+      <!-- Tabs -->
+      <div class="ps-tabs-container">
+        <div class="ps-tabs-header">
+          <button class="ps-tab-btn active" data-tab="tab-sat" onclick="switchEquipoTab(this,'tab-sat')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            SAT
+          </button>
+          <button class="ps-tab-btn" data-tab="tab-digitalpos" onclick="switchEquipoTab(this,'tab-digitalpos')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            Digital POS
+          </button>
         </div>
 
-        <!-- Terminal TP1580 -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="images/sat-terminal-tp1580.webp" alt="Terminal SAT TP1580" style="max-height:130px;max-width:100%;object-fit:contain;">
+        <div class="ps-tabs-content">
+
+          <!-- PANE: SAT -->
+          <div class="ps-tab-pane active" id="tab-sat">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;">
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="images/sat-terminal-s10.webp" alt="Terminal SAT S10" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Terminal Doble Pantalla</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">All in One táctil · Doble display · Alto tráfico</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="images/sat-terminal-tp1580.webp" alt="Terminal SAT TP1580" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Terminal TP1580 Core i5</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">Core i5 · 15" táctil · SSD · Windows · 24/7</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="images/sat-impresora-16t.jpg" alt="Impresora SAT 16T" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Impresora Térmica SAT 16T</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">220mm/s · 58/80mm · Auto cortador · USB + Serial</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="images/sat-cajon-119.webp" alt="Cajón Monedero SAT 119" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Cajón Monedero SAT 119</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">Acero · 4 compartimientos billetes · RJ11</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="images/sat-lector-li102.webp" alt="Lector SAT LI102" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Lector Barras SAT LI102</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">Sensor lineal · USB · Base soporte incluida</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="images/sat-balanza-ps30.jpg" alt="Balanza SAT PS30 SE" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Balanza SAT PS30 SE</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">30 kg · Etiquetadora · Pantalla LCD · Software PC</p>
+              </div>
+
+            </div>
           </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Terminal TP1580 Core i5</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">Core i5 · Pantalla táctil 15" · SSD · Windows · 24/7</p>
-        </div>
 
-        <!-- Impresora SAT 16T -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="images/sat-impresora-16t.jpg" alt="Impresora SAT 16T" style="max-height:130px;max-width:100%;object-fit:contain;">
+          <!-- PANE: DIGITAL POS -->
+          <div class="ps-tab-pane" id="tab-digitalpos">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;">
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="https://digitalinc.com.co/assets/img/team/8.jpg" alt="Terminal Digital POS DIG-T660" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Terminal DIG-T660</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">All in One · Pantalla capacitiva sin bizel · SSD · Industrial</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="images/digitalpos-impresora.webp" alt="Impresora Digital POS" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Impresora Térmica</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">80mm · Auto cortador · USB + LAN · ESC/POS</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="https://digitalinc.com.co/assets/img/team/16.jpg" alt="Cajón Digital POS DIG-330" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Cajón Monedero DIG-330</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">Acero calibre pesado · Bandeja extraíble · RJ11</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="https://digitalinc.com.co/assets/img/team/21.jpg" alt="Lector Digital POS DIG-1202" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Lector Barras DIG-1202</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">1D Laser · 200 scan/seg · Manual y automático</p>
+              </div>
+
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
+                <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                  <img src="https://digitalinc.com.co/assets/img/team/18.jpg" alt="Balanza Digital POS DIG-B01" style="max-height:130px;max-width:100%;object-fit:contain;">
+                </div>
+                <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
+                <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Balanza DIG-B01</h4>
+                <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">3–4 kg · Panel TOUCH · Autoliquidación · RS232</p>
+              </div>
+
+            </div>
           </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Impresora Térmica SAT 16T</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">220mm/s · 58/80mm · Auto cortador · USB + Serial</p>
+
         </div>
-
-        <!-- Cajón SAT 119 -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="images/sat-cajon-119.webp" alt="Cajón Monedero SAT 119" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Cajón Monedero SAT 119</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">Acero · 4 compartimientos billetes · Apertura RJ11</p>
-        </div>
-
-        <!-- Lector SAT LI102 -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="images/sat-lector-li102.webp" alt="Lector SAT LI102" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Lector Barras SAT LI102</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">Sensor lineal · USB · Base soporte incluida</p>
-        </div>
-
-        <!-- Balanza SAT PS30 SE -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="images/sat-balanza-ps30.jpg" alt="Balanza SAT PS30 SE" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:var(--color-accent);border:1px solid var(--color-accent);border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">SAT</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Balanza SAT PS30 SE</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">30 kg · Etiquetadora · Pantalla LCD · Software PC</p>
-        </div>
-
-      </div>
-
-      <!-- Bloque Digital POS -->
-      <h3 style="color:var(--color-accent);font-size:1rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px;">
-        <span style="display:inline-block;width:32px;height:2px;background:var(--color-accent);"></span> Marca Digital POS
-      </h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;">
-
-        <!-- Terminal Digital POS (usando imagen SAT TP1580 como referencia visual similar) -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="https://digitalinc.com.co/assets/img/team/8.jpg" alt="Terminal Digital POS DIG-T660" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Terminal DIG-T660</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">All in One · Pantalla capacitiva sin bizel · SSD · Industrial</p>
-        </div>
-
-        <!-- Impresora Digital POS -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="images/digitalpos-impresora.webp" alt="Impresora Digital POS" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Impresora Térmica</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">80mm · Auto cortador · USB + LAN · ESC/POS · Alta velocidad</p>
-        </div>
-
-        <!-- Cajón Digital POS -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="https://digitalinc.com.co/assets/img/team/16.jpg" alt="Cajón Digital POS DIG-330" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Cajón Monedero DIG-330</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">Acero calibre pesado · Bandeja extraíble · RJ11</p>
-        </div>
-
-        <!-- Lector Digital POS -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="https://digitalinc.com.co/assets/img/team/21.jpg" alt="Lector Digital POS DIG-1202" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Lector Barras DIG-1202</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">1D Laser · 200 scan/seg · Manual y automático · Base incluida</p>
-        </div>
-
-        <!-- Balanza Digital POS -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.12);border-radius:12px;padding:20px;text-align:center;transition:border-color 0.3s;" onmouseover="this.style.borderColor='rgba(0,240,255,0.45)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.12)'">
-          <div style="background:#111;border-radius:8px;padding:12px;margin-bottom:14px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-            <img src="https://digitalinc.com.co/assets/img/team/18.jpg" alt="Balanza Digital POS DIG-B01" style="max-height:130px;max-width:100%;object-fit:contain;">
-          </div>
-          <span style="display:inline-block;font-size:0.7rem;font-weight:700;color:#a78bfa;border:1px solid #a78bfa;border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:1px;">DIGITAL POS</span>
-          <h4 style="color:#fff;font-size:0.92rem;margin:0 0 5px;">Balanza DIG-B01</h4>
-          <p style="color:var(--color-text-muted);font-size:0.78rem;margin:0;">3–4 kg · Panel TOUCH · Autoliquidación · RS232</p>
-        </div>
-
       </div>
 
       <p style="text-align:center;margin-top:36px;color:var(--color-text-muted);font-size:0.85rem;">
@@ -544,6 +549,14 @@
       </p>
     </div>
   </section>
+<script>
+function switchEquipoTab(btn, tabId) {
+  document.querySelectorAll('#equipos-pos .ps-tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#equipos-pos .ps-tab-pane').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+</script>
 
   <!-- ==========================================================================
        SECCIÓN: SOLUCIONES POS Y LICENCIAMIENTO
