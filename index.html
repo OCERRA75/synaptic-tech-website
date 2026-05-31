@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Synaptic Tech | Infraestructura TI, Sistemas ERP & Analítica de Alta Disponibilidad</title>
+  <meta name="description" content="Propuesta de servicios e infraestructura tecnológica liderada por el Ing. Oscar J. Cerra Flórez. Soluciones avanzadas en Proxmox, ERP PSKloud, Seguridad Perimetral e Inteligencia de Negocios en Colombia.">
+  <meta name="keywords" content="Synaptic Tech, Oscar Cerra, Infraestructura TI, Proxmox, VMware ESXi, ERP PSKloud, EcoMetrix, Power BI, Seguridad Perimetral, VPN, VLAN, POS Premium, Colombia, Barranquilla">
+  <meta name="author" content="Ing. Oscar J. Cerra Flórez">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>S</text></svg>">
+  
+  <!-- Hilos de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CABECERA (HEADER)
+       ========================================================================== -->
+  <header id="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="header-logo-link">
+        <div class="logo-icon">
+          <!-- SVG Logotipo Oficial Synaptic Tech de Alta Fidelidad -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" stroke="#00f0ff" stroke-width="4" opacity="0.65"/>
+            <path d="M50 30 L65 23 L62 42 L50 50 L38 58 L35 77 L50 70" stroke="#00f0ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="50" y1="30" x2="50" y2="10" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="65" y1="23" x2="73.5" y2="17.6" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="62" y1="42" x2="88" y2="37.6" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="62" y1="42" x2="88" y2="62.4" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="50" y1="70" x2="50" y2="90" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="35" y1="77" x2="26.5" y2="82.4" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="38" y1="58" x2="12" y2="62.4" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="38" y1="58" x2="12" y2="37.6" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="50" y1="30" x2="26.5" y2="17.6" stroke="#00f0ff" stroke-width="3" stroke-linecap="round"/>
+            
+            <circle cx="50" cy="10" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="73.5" cy="17.6" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="88" cy="37.6" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="88" cy="62.4" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="73.5" cy="82.4" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="50" cy="90" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="26.5" cy="82.4" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="12" cy="62.4" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="12" cy="37.6" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="26.5" cy="17.6" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            
+            <circle cx="50" cy="30" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="65" cy="23" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="62" cy="42" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="50" cy="50" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="38" cy="58" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="35" cy="77" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="50" cy="70" r="4.5" fill="#08090d" stroke="#ffffff" stroke-width="2"/>
+          </svg>
+        </div>
+        <span class="logo-text">Synaptic Tech</span>
+      </a>
+      
+      <nav id="navbar-menu">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Inicio</a></li>
+          <li><a href="#ecosistema" class="nav-link">Ecosistema</a></li>
+          <li><a href="#pskloud-suite" class="nav-link">PSKloud ERP</a></li>
+          <li><a href="#soluciones-pos" class="nav-link">Soluciones POS</a></li>
+          <li><a href="#ventajas" class="nav-link">Ventajas</a></li>
+          <li><a href="#lider" class="nav-link">Nosotros</a></li>
+        </ul>
+      </nav>
+      
+      <a href="#contacto" class="nav-btn" id="header-cta-btn">Contacto</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECCIÓN HÉROE (HERO)
+       ========================================================================== -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge" id="hero-badge">
+          <span class="badge-dot"></span>
+          INFRAESTRUCTURA TI DE ALTA DISPONIBILIDAD
+        </div>
+        <h1 class="hero-title" id="main-hero-title">
+          <span>PROPUESTA DE SERVICIOS E</span>
+          <span class="accent-text">INFRAESTRUCTURA TI</span>
+        </h1>
+        <p class="hero-desc" id="hero-description-text">
+          Respaldamos la continuidad y crecimiento de tu empresa mediante arquitectura de redes, virtualización experta, integración de ERPs y análisis dinámico de datos.
+        </p>
+        <div class="hero-buttons">
+          <a href="#ecosistema" class="btn btn-primary" id="btn-explore-services">Explorar Servicios</a>
+          <a href="#contacto" class="btn btn-secondary" id="btn-request-quote">Solicitar Asesoría</a>
+        </div>
+      </div>
+      
+      <div class="hero-canvas-container" id="canvas-container">
+        <div class="canvas-glow"></div>
+        <canvas id="logo3d-canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: ECOSISTEMA TECNOLÓGICO Y LÍNEAS DE NEGOCIO
+       ========================================================================== -->
+  <section id="ecosistema" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Lo Que Ofrecemos</span>
+        <h2 class="section-title" id="ecosystem-section-title">Ecosistema Tecnológico</h2>
+      </div>
+      
+      <div class="ecosystem-grid">
+        
+        <!-- Tarjeta 1: Alta Disponibilidad -->
+        <div class="service-card" id="card-virtualization">
+          <div class="card-header-flex">
+            <div class="service-icon">
+              <!-- Icono de Servidor / Cloud -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Alta Disponibilidad y Virtualización</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Diseño y migración de servidores bare-metal a plataformas virtuales robustas.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Configuración experta de hipervisores bajo entornos de producción estables: <strong>Proxmox 9.1.1</strong> y <strong>VMware ESXi</strong>.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Implementación, parametrización y soporte del sistema de mesa de ayuda y gestión de activos TI con <strong>GLPI</strong>.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Políticas estrictas de salvaguarda de datos corporativos: copias automatizadas, replicación en caliente y snapshots.</span>
+            </li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Proxmox 9.1.1</span>
+            <span class="tech-tag">VMware ESXi</span>
+            <span class="tech-tag">GLPI</span>
+            <span class="tech-tag">Snapshots</span>
+          </div>
+        </div>
+        
+        <!-- Tarjeta 2: ERP -->
+        <div class="service-card" id="card-erp">
+          <div class="card-header-flex">
+            <div class="service-icon">
+              <!-- Icono de Red / Database -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Integración de Soluciones ERP</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Migración de datos de inventario, compras y contabilidad con mínima interrupción operativa.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Integración de la solución métrica avanzada y de gestión corporativa <a href="https://ecometrix-app-one.vercel.app/" target="_blank" style="color: var(--color-accent); text-decoration: underline; font-weight: 700;">EcoMetrix</a>.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Sincronización fluida con terminales de preventa y facturación en campo (<strong>InSitu Sale 2.0</strong>).</span>
+            </li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">PSKloud</span>
+            <span class="tech-tag">Odoo</span>
+            <span class="tech-tag">Siesa</span>
+            <a href="https://ecometrix-app-one.vercel.app/" target="_blank" class="tech-tag" style="text-decoration: none;">EcoMetrix</a>
+          </div>
+        </div>
+        
+        <!-- Tarjeta 3: Seguridad -->
+        <div class="service-card" id="card-security">
+          <div class="card-header-flex">
+            <div class="service-icon">
+              <!-- Icono de Escudo / Seguridad -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Seguridad Perimetral y Conectividad</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Endurecimiento y administración de Firewalls perimetrales contra ataques externos.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Segmentación lógica de la red de la empresa mediante <strong>VLANs</strong> para aislar datos sensibles.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Despliegue de canales dedicados y cifrados <strong>VPN</strong> para interconexión segura de sucursales.</span>
+            </li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Firewalls</span>
+            <span class="tech-tag">VLANs</span>
+            <span class="tech-tag">VPN</span>
+            <span class="tech-tag">Cifrado AES</span>
+          </div>
+        </div>
+        
+        <!-- Tarjeta 4: Analítica -->
+        <div class="service-card" id="card-analytics">
+          <div class="card-header-flex">
+            <div class="service-icon">
+              <!-- Icono de Gráfico / Inteligencia -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Inteligencia de Negocios y Analítica</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Modelado avanzado de bases de datos transaccionales directo desde el motor relacional.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Desarrollo de cuadros de mando e informes analíticos dinámicos e interactivos en <strong>Power BI</strong>.</span>
+            </li>
+            <li class="service-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Modelamiento de flujos digitales orientados a la adopción modular de <strong>Inteligencia Artificial</strong>.</span>
+            </li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Power BI</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">Modelamiento de Datos</span>
+            <span class="tech-tag">AI Pipelines</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: SUITE ERP PSKLOUD (DEDICADA)
+       ========================================================================== -->
+  <section id="pskloud-suite" class="section" style="background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(13, 15, 20, 0.4) 100%);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Solución de Gestión Integral</span>
+        <h2 class="section-title" id="pskloud-suite-title">Plataforma ERP PSKloud</h2>
+      </div>
+
+      <!-- Pestañas Interactivas (Tabs) -->
+      <div class="ps-tabs-container">
+        <div class="ps-tabs-header">
+          <button class="ps-tab-btn active" data-tab="tab-web">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            Soluciones WEB (Cloud)
+          </button>
+          <button class="ps-tab-btn" data-tab="tab-desktop">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            Soluciones DESKTOP
+          </button>
+          <button class="ps-tab-btn" data-tab="tab-elegal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Documentación Electrónica
+          </button>
+        </div>
+
+        <div class="ps-tabs-content">
+          <!-- PANE: SOLUCIONES WEB -->
+          <div class="ps-tab-pane active" id="tab-web">
+            <div class="ps-grid">
+              
+              <!-- Card: Administrativo Full -->
+              <div class="ps-card-info">
+                <div class="ps-card-badge">WEB</div>
+                <h3 class="ps-card-title">Sistema Administrativo FULL</h3>
+                <p class="ps-card-desc">Solución 100% en la nube diseñada para optimizar todas las operaciones críticas de tu empresa con un diseño responsivo e integración API.</p>
+                <ul class="ps-card-list">
+                  <li><strong>Gestión Comercial:</strong> Facturación, presupuestos, cotizaciones, compras, gastos e inventarios.</li>
+                  <li><strong>Contabilidad Integrada:</strong> Cuentas por cobrar/pagar, bancos y control de caja.</li>
+                  <li><strong>Conectividad Avanzada:</strong> Webservice nativo para enlazar inventario y ventas con tu tienda en línea.</li>
+                  <li><strong>Multi-sucursal:</strong> Control consolidado de múltiples agencias o sub-almacenes en tiempo real.</li>
+                </ul>
+              </div>
+
+              <!-- Card: Contabilidad Web -->
+              <div class="ps-card-info">
+                <div class="ps-card-badge">WEB</div>
+                <h3 class="ps-card-title">Contabilidad Web</h3>
+                <p class="ps-card-desc">Permite llevar eficazmente el control de las operaciones contables de tu empresa de forma rápida, exacta y sin complicaciones.</p>
+                <ul class="ps-card-list">
+                  <li><strong>Reportes Financieros:</strong> Obtén balances generales, de comprobación, estados de pérdidas/ganancias al instante.</li>
+                  <li><strong>Obligaciones Fiscales:</strong> Manejo inteligente de impuestos, retenciones e información exógena (medios magnéticos).</li>
+                  <li><strong>Auditoría & Activos:</strong> Control de depreciación de activos fijos y auditoría detallada de comprobantes.</li>
+                </ul>
+              </div>
+
+              <!-- Card: POS Web & E-Shop -->
+              <div class="ps-card-info">
+                <div class="ps-card-badge">WEB</div>
+                <h3 class="ps-card-title">Personal Business & Shop (E-Commerce)</h3>
+                <p class="ps-card-desc">Sistemas simplificados de venta rápida y vitrina digital conectada para expandir tus canales de venta al mercado en línea.</p>
+                <ul class="ps-card-list">
+                  <li><strong>Sistema POS Web:</strong> Versión web ligera para facturación en tienda física, inventario rápido y cobros.</li>
+                  <li><strong>Tienda en Línea:</strong> E-Shop autogestionable adaptable a tu marca, con carrito de compras y pagos electrónicos.</li>
+                  <li><strong>Sincronización Total:</strong> Los pedidos de la web impactan el inventario del sistema administrativo.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PANE: SOLUCIONES DESKTOP -->
+          <div class="ps-tab-pane" id="tab-desktop">
+            <div class="ps-grid">
+
+              <!-- Card: Administrativo & POS Desktop -->
+              <div class="ps-card-info">
+                <div class="ps-card-badge desktop">DESKTOP</div>
+                <h3 class="ps-card-title">Administrativo & Punto de Venta</h3>
+                <p class="ps-card-desc">Aplicaciones robustas cliente-servidor de alta velocidad, ideales para un alto tráfico comercial en supermercados, tiendas y grandes comercios.</p>
+                <ul class="ps-card-list">
+                  <li><strong>Rendimiento Crítico:</strong> Diseñado para funcionar a máxima velocidad con interfaces táctiles (Touch Screen).</li>
+                  <li><strong>Control Total:</strong> Gestión de hasta 999 sucursales, seriales de productos y artículos equivalentes.</li>
+                  <li><strong>Finanzas en Sitio:</strong> Control de caja chica, conciliación bancaria y comisiones por escala de ventas.</li>
+                </ul>
+              </div>
+
+              <!-- Card: Restaurantes & Hoteles -->
+              <div class="ps-card-info">
+                <div class="ps-card-badge desktop">DESKTOP</div>
+                <h3 class="ps-card-title">Soluciones Sectoriales (Restaurantes, Hoteles y Talleres)</h3>
+                <p class="ps-card-desc">Módulos especializados que adaptan el ERP a la operatividad física y logística de tu sector comercial.</p>
+                <ul class="ps-card-list">
+                  <li><strong>Restaurante:</strong> Control de mesas, reservaciones, comisiones de meseros y monitor de cocina integrado.</li>
+                  <li><strong>Hoteles:</strong> Registro de huéspedes, check-in/out, tarifas por temporada y planning de ama de llaves.</li>
+                  <li><strong>Talleres:</strong> Órdenes de reparación, presupuestos de repuestos y programación de mantenimientos por marca/modelo.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PANE: DOCUMENTOS ELECTRÓNICOS -->
+          <div class="ps-tab-pane" id="tab-elegal">
+            <div class="ps-grid">
+
+              <!-- Card: Facturación DIAN -->
+              <div class="ps-card-info" style="grid-area: auto / span 2;">
+                <div class="ps-card-badge legal">DIAN COMPLIANT</div>
+                <h3 class="ps-card-title">Cumplimiento Tributario y Facturación Electrónica en Colombia</h3>
+                <p class="ps-card-desc">Toda la suite de PSKloud está plenamente sintonizada para cumplir de manera automática con las directrices exigidas por la Dirección de Impuestos y Aduanas Nacionales (DIAN).</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 25px;">
+                  <div class="legal-box">
+                    <h4>Factura & POS Electrónico</h4>
+                    <p>Emisión inmediata de facturas electrónicas con firma digital, código CUFE y validación previa exigida.</p>
+                  </div>
+                  <div class="legal-box">
+                    <h4>Nómina Electrónica</h4>
+                    <p>Reporte oficial de devengados, deducciones y pagos a empleados directo a la DIAN mediante archivos XML.</p>
+                  </div>
+                  <div class="legal-box">
+                    <h4>Documento Soporte</h4>
+                    <p>Generación de soportes por compras a sujetos no obligados a facturar y recepción automatizada de documentos XML.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: SOLUCIONES POS Y LICENCIAMIENTO
+       ========================================================================== -->
+  <section id="soluciones-pos" class="section" style="background: rgba(13, 15, 20, 0.3);">
+    <div class="container pos-layout">
+      <div class="pos-text">
+        <span class="section-subtitle">Automatización en Punto de Venta</span>
+        <h2 class="section-title" style="text-align: left;" id="pos-section-title">Hardware POS & Licenciamiento</h2>
+        <p class="pos-desc" id="pos-description-paragraph">
+          Automatizamos tus puntos de venta con terminales de alta durabilidad y software integrado de alto nivel. Consolidamos un módulo comercial completo con opciones de financiación flexible para proteger el flujo de caja de tu negocio.
+        </p>
+        <ul class="pos-details-list">
+          <li class="pos-detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            <span>Instalación y puesta a punto inmediata en campo</span>
+          </li>
+          <li class="pos-detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            <span>Soporte técnico directo especializado</span>
+          </li>
+          <li class="pos-detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            <span>Integración nativa con la solución contable PSKloud</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Tarjeta Comercial POS Premium -->
+      <div class="pos-card" id="pos-premium-offer-card">
+        <div class="pos-card-header">
+          <div>
+            <span class="pos-badge">Módulo Premium</span>
+            <h3 class="service-title" style="margin-top: 10px;">Combo POS Premium</h3>
+          </div>
+          <div class="pos-price-wrapper">
+            <span class="pos-price" id="display-total-price">$6.850.000</span>
+            <span class="pos-currency">COP</span>
+          </div>
+        </div>
+        
+        <div class="pos-components">
+          <h4 class="pos-comp-title">Componentes Incluidos:</h4>
+          <ul class="ps-card-list" style="margin-top: 10px; margin-bottom: 25px;">
+            <li style="font-size: 0.9rem; color: var(--color-text-main);">
+              <strong>Hardware POS de Alta Gama (A Elección):</strong> Todo en marca <strong>SAT</strong> o todo en marca <strong>Digital POS</strong> (Terminal, impresora térmica y periféricos).
+            </li>
+            <li style="font-size: 0.9rem; color: var(--color-text-main);">
+              <strong>Software:</strong> Licenciamiento Básico del ERP <strong>PSKloud</strong>.
+            </li>
+            <li style="font-size: 0.9rem; color: var(--color-text-main);">
+              <strong>Servicios:</strong> Implementación y sintonización especializada del ecosistema en sitio.
+            </li>
+            <li style="font-size: 0.9rem; color: var(--color-text-main);">
+              <strong>Soporte Técnico:</strong> Soporte Premium incluido por <strong>3 meses</strong>.
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Calculador Financiero Interactivo -->
+        <div class="finance-box" id="interactive-finance-box">
+          <h4 class="pos-comp-title" style="margin-bottom: 10px; display: flex; justify-content: space-between;">
+            <span>Simulador de Financiación</span>
+            <span id="initial-percentage-text" style="color: var(--color-accent);">30% Inicial</span>
+          </h4>
+          
+          <!-- Slider Interactivo -->
+          <div style="margin: 15px 0 20px 0;">
+            <input type="range" id="finance-slider" min="20" max="60" value="30" step="5" style="width:100%; accent-color: var(--color-accent); cursor: pointer;">
+            <div style="display:flex; justify-content: space-between; font-size: 0.75rem; color: var(--color-text-muted); margin-top: 4px;">
+              <span>Mín. 20%</span>
+              <span>40%</span>
+              <span>Máx. 60%</span>
+            </div>
+          </div>
+          
+          <div class="finance-row">
+            <span class="finance-label">Inversión Inicial:</span>
+            <span class="finance-value highlight" id="display-initial-investment">$2.055.000 COP</span>
+          </div>
+          <div class="finance-row">
+            <span class="finance-label">Saldo Financiado:</span>
+            <span class="finance-value" id="display-financed-balance">$4.795.000 COP</span>
+          </div>
+          <div class="finance-row">
+            <span class="finance-label">Modalidad de Pago:</span>
+            <span class="finance-value" style="color: #ffffff;">Cuotas Mensuales Fijas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: VENTAJAS DE INGENIERÍA
+       ========================================================================== -->
+  <section id="ventajas" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Por Qué Elegirnos</span>
+        <h2 class="section-title" id="advantages-section-title">Ventajas de Ingeniería</h2>
+      </div>
+      
+      <div class="advantages-grid">
+        
+        <!-- Ventaja 1 -->
+        <div class="advantage-card" id="adv-trayectoria">
+          <div class="adv-icon-wrapper">
+            <!-- Icono de Engranaje / Ingeniería -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <h3 class="adv-title">Trayectoria de Alta Gama</h3>
+          <p class="adv-desc">
+            Sustituimos aproximaciones empíricas por metodologías de ingeniería estructuradas y totalmente comprobadas en vivo, garantizando implementaciones de alto nivel.
+          </p>
+        </div>
+        
+        <!-- Ventaja 2 -->
+        <div class="advantage-card" id="adv-monitoreo">
+          <div class="adv-icon-wrapper">
+            <!-- Icono de Monitor / Pulso -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="adv-title">Monitoreo de Métricas</h3>
+          <p class="adv-desc">
+            La inclusión nativa de capas analíticas avanzadas como <a href="https://ecometrix-app-one.vercel.app/" target="_blank" style="color: var(--color-accent); text-decoration: underline; font-weight: 700;">EcoMetrix</a> asegura visibilidad contable y gerencial en tiempo real, facilitando la toma de decisiones informadas.
+          </p>
+        </div>
+        
+        <!-- Ventaja 3 -->
+        <div class="advantage-card" id="adv-flexibilidad">
+          <div class="adv-icon-wrapper">
+            <!-- Icono de Tarjeta / Financiero -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+              <line x1="1" y1="10" x2="23" y2="10"></line>
+            </svg>
+          </div>
+          <h3 class="adv-title">Flexibilidad Financiera</h3>
+          <p class="adv-desc">
+            Nuestros esquemas de pago y financiación están minuciosamente diseñados para proteger el flujo de caja operativo de las empresas aliadas durante los despliegues.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: LÍDER PROFESIONAL (PERFIL)
+       ========================================================================== -->
+  <section id="lider" class="section" style="background: rgba(13, 15, 20, 0.35);">
+    <div class="container">
+      <div class="profile-card" id="leader-professional-card">
+        <div class="profile-avatar-container">
+          <div class="profile-avatar-glow" style="border-radius: 8px; width: 150px; height: 150px; padding: 12px; display: flex; align-items: center; justify-content: center;">
+            <!-- Logotipo oficial transparente del perfil -->
+            <img src="images/logo_transparent.png" alt="Synaptic Tech" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.5));">
+          </div>
+          <h3 class="profile-name" style="margin-top: 15px;">Ing. Oscar J. Cerra Flórez</h3>
+          <span class="profile-tag">Líder de Infraestructura y Consultoría ERP</span>
+          
+          <div class="profile-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Latam</span>
+          </div>
+        </div>
+        
+        <div class="profile-details">
+          <p class="profile-bio">
+            Como profesional en <strong>Ingeniería de Sistemas</strong> egresado de la <strong>Universidad Simón Bolívar</strong> y especialista enfocado en la arquitectura de infraestructura tecnológica, presento un esquema integral de servicios TI. 
+          </p>
+          <p class="profile-bio">
+            Respaldado por una sólida trayectoria de especialización práctica en entornos de producción complejos, garantizo la alta disponibilidad, la sintonización fina de bases de datos relacionales y la implementación de perímetros de seguridad avanzados adaptados a la realidad operativa corporativa de tu organización.
+          </p>
+          
+          <div class="profile-info-grid">
+            <div class="info-item">
+              <span class="info-label">Especialidad</span>
+              <span class="info-val">Infraestructura TI, ERP & Analítica</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Cobertura</span>
+              <span class="info-val">Latam</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN: CONTACTO
+       ========================================================================== -->
+  <section id="contacto" class="section">
+    <div class="container contact-layout">
+      <div class="contact-info">
+        <span class="section-subtitle">¿Listo para comenzar?</span>
+        <h2 class="contact-title-small">Pongámonos en contacto</h2>
+        <p class="pos-desc" style="margin-top: -10px;">
+          Si deseas cotizar el Combo POS Premium, agendar una consultoría de infraestructura o requieres soporte especializado para tu ERP, no dudes en escribirnos.
+        </p>
+        
+        <div class="contact-channels">
+          <a href="mailto:info@synaptictech.com" class="contact-card" id="email-contact-link">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">Correo Electrónico</span>
+              <span class="contact-card-value">info@synaptictech.com</span>
+            </div>
+          </a>
+          
+          <div class="contact-card" id="location-contact-info">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">Ubicación Central</span>
+              <span class="contact-card-value">Latam</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Formulario interactivo -->
+      <form class="contact-form" id="main-contact-form" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! El equipo de Synaptic Tech se pondrá en contacto contigo a la brevedad.'); this.reset();">
+        <div class="form-group">
+          <label class="form-label" for="form-name">Nombre Completo</label>
+          <input type="text" id="form-name" class="form-input" placeholder="Ej. Juan Pérez" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="form-email">Correo Electrónico</label>
+          <input type="email" id="form-email" class="form-input" placeholder="nombre@empresa.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="form-subject">Servicio de Interés</label>
+          <input type="text" id="form-subject" class="form-input" placeholder="Ej. Combo POS Premium / Auditoría Proxmox" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="form-message">Mensaje / Requerimientos</label>
+          <textarea id="form-message" class="form-textarea" placeholder="Describe brevemente tus necesidades tecnológicas..." required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn" id="btn-submit-contact-form">Enviar Solicitud</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PIE DE PÁGINA (FOOTER)
+       ========================================================================== -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#" class="footer-logo" id="footer-logo-link">
+        <img src="images/logo_transparent.png" alt="Synaptic Tech Logo" style="height: 55px; object-fit: contain; filter: drop-shadow(0 0 5px rgba(0, 240, 255, 0.25));">
+      </a>
+      <p class="footer-text" id="footer-copyright-notice">
+        &copy; 2026 Synaptic Tech. Todos los derechos reservados. | En alianza con <a href="#">Sysworlds Technology</a>.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Enlace CDN Three.js oficial estable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Lógica de animación del logo y visualización -->
+  <script src="js/logo3d.js"></script>
+  <!-- Lógica general e interactividad de la página -->
+  <script src="js/main.js"></script>
+</body>
+</html>
